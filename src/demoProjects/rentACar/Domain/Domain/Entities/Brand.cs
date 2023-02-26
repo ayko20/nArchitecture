@@ -9,8 +9,8 @@ namespace Domain.Entities
 {
     public class Brand : Entity
     {
+        public int Id { get; }
         public string Name { get; set; }
-        public int İd { get; }
 
         public Brand()
         {
@@ -19,7 +19,7 @@ namespace Domain.Entities
 
         public Brand(int id, string name) : this()
         {
-            Id = id;
+            base.Id = id;
             Name = name;
         }
     }
